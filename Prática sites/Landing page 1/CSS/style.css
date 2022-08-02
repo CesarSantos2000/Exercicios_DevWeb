@@ -89,7 +89,7 @@ nav ul button:hover {
 
 .content .header-block {
     max-width: 1000px;
-    min-width: 300px;
+    min-width: 200px;
     height: 400px;
     background-color: var(--blue);
     border-radius: 8px;
@@ -127,3 +127,63 @@ nav ul button:hover {
     transform: translateX(-20px);
     transition: transform 0.4s;
 }
+
+.catalog {
+    margin-top: 10%;
+}
+
+.title-catalog {
+    position: absolute;
+    margin-top: 5%;
+    display: block;
+    font-size: 1rem;
+    z-index: 15;
+}
+
+.title-catalog p {
+    font-weight: 400;
+}
+
+.title-catalog strong {
+    font-weight: 800;
+}
+
+section .search-bar {
+    display: flex;
+    width: 100%;
+    min-height: 25px;
+    max-height: 100px;
+    margin: 10% auto;
+    background: var(--gray);
+}
+
+.search-bar form {
+    display: flex;
+    position: relative;
+    margin: auto;
+    padding: 30px 50px;
+}
+.search-bar form input {
+    padding: 5% 40%;
+    margin-right: 3%;
+    margin-left: -30%;
+    font-weight: 600;
+    max-height: 100px;
+    min-height: 25px;
+}
+
+.search-bar form button {
+    padding: 0 8%;
+    background-color: var(--gray);
+    border: 2px solid grey;
+    font-weight: 600;
+    color: grey;
+} 
+
+.search-bar form button:hover {
+    transition: background-color 0.6s;
+    background: var(--blue);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
