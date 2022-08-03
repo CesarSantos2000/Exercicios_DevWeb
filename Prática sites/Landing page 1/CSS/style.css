@@ -293,3 +293,12 @@ section .card-item{
     width: 90%;
     letter-spacing: 2px;
 }
+
+.features {
+    display:flex; 
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 600px;
+}
