@@ -156,7 +156,7 @@ nav ul button:hover {
 
  .search-bar {
     width: 980px;
-    max-height: 150px;
+    height: 150px;
     margin: 0 auto;
     display: flex;
     background: var(--gray);
@@ -167,46 +167,40 @@ nav ul button:hover {
     margin-top: 5%;
 }
 
-.search-bar form {
-    display: flex;
-    position: relative;
-    padding: 50px 50px;
-}
-.search-bar form input {
-    border: none;
+.search-input {
     width: 700px;
     height: 50px;
-    margin-right: -1%;
-    font-weight: 600;
-    border-radius: 4px 4px 0;
+    border: none;
+    border-radius: 4px 0 0 4px;
     text-indent: 10px;
 }
 
-.search-bar form button {
-    padding: 0 8%;
+.search-button {
+    width: 150px;
+    height: 50px;
     background-color: rgb(0, 0, 150);
     border: none;
     font-weight: 600;
     color: white;
     border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: 0.2s ease;
 } 
 
-.search-bar form button:hover {
-    transition: background-color 0.6s;
+.search-button:hover {
+    transition: #dedede;
     background: var(--blue);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
 }
 
 section .card-wraper {
-    display: flex;
+    display: grid;
     max-width: 1000px;
-    min-width: 250px;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     column-gap: 30px;
-    margin: 0 auto;
+    padding-top: 50px;
+    margin-top: 5px;
 }
 
 section .card-item{
@@ -217,8 +211,7 @@ section .card-item{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 30px;
-    margin-left: 6px;
+    margin-top: 4%;
 }
  .card-item img {
     width: 85%;
@@ -248,24 +241,35 @@ section .card-item{
 }
 
 .about {
-    background: #ededed;
+    width: 100%;
+    height: 100%;
     display: flex;
-    padding: 10px;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px
+}
+
+.about-content {
     max-width: 1000px;
     min-width: 300px;
     height: 600px;
-    align-items: center;
+    background: #dedede3b;
+    margin: 0 auto;
     border-radius: 8px;
     z-index: 10;
+    padding: 10px;
+    display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
 
 .about-image {
     background: grey;
     margin: 0 auto;
-    width: 300px;
+    min-width: 300px;
+    width: 25%;
+    height: 100%;
     margin-left: 0%;
     border-radius: 4px;
 }
@@ -347,13 +351,17 @@ section .card-item{
     margin-left: 20px;
 }
 
+footer {
+    width: 100%;
+    height: 250px;
+}
+
 .footer-base {
     background: var(--orange);
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    display: block;
-    width: 100%;
+    
 }
 
 .footer-up {
@@ -428,4 +436,93 @@ section .card-item{
     color: white;
     font-size: 1.4rem;
     width: 100%;
+}
+
+
+@media (max-width: 576px){
+    nav ul li {
+        display: none;
+    }
+
+    .header-block img {
+        position: absolute;
+        width: 70%;
+        right: 15%;
+        top: 30%;
+    }
+
+    .header-block .text {
+        position: absolute;
+        bottom: 10%;
+        left: 15;
+    }
+
+    section .search-bar {
+        
+        width: 390px;
+        padding: 0 10px;
+    }
+
+    .search-input {
+        max-width: 700px;
+        min-width: 240px;
+    }
+
+    .search-button {
+        max-width: 150px;
+        min-width: 80px;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .about-image {
+        display: none;
+    }
+    .text-about {
+        width: 90%;
+    }
+
+    .text-about p {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+    .text-about h3 {
+        text-align: center;
+    }
+
+    .features {
+        height: 100%;
+    }
+
+    .feature-block {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .footer-base {
+        height: 100%;
+    }
+
+    .footer-up{
+        flex-direction: column;
+        display: flex;
+    }
 }
