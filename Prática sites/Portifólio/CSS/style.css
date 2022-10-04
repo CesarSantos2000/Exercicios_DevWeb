@@ -16,7 +16,7 @@ html, body {
 
 header {
     width: 100%;
-    background: gray;
+    background: rgb(180, 180, 180);
 }
 
 div {
@@ -86,50 +86,103 @@ nav {
 }
 
 .title-banner h6 {
-    align-items: center;
+    position: relative;
     font-size: 5rem;
     color: white;
 }
 .title-banner h4 {
+    position: relative;
+    display: flex;
     font-size: 2rem;
     color: white;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
+.info-content {
+    align-items: center;
+    margin: 2% 10% 2% 10%;
+    position: relative;
+    padding: 7px;
+    background-color: white;
+    box-shadow: 4px 4px 8px black;
+    min-height: 220px;
+    max-height: 300px;
+    border-radius: 8px;
+}
+
+.sobre {
+    vertical-align: middle;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
 
 .info-img {
     display: flex;
+    position: relative;
     z-index: 4;
     padding: 10px;
-    width: 100%;
-    margin: 0 auto;
+    max-width: 150px;
+    height: 100%;
     padding: 0;
-    position: absolute;
     vertical-align: middle;
-    margin-top: 2%;
+    float: left;
 }
 
 .info-img img {
-    height: 15%;
-    width: 15%;
-    border: 4px solid black;
+    width: 100%;
+    border: 4px solid rgb(2, 2, 12);
     border-radius: 8px;
     margin-left: 2%;
 }
 
 .info-pessoal {
-    min-width: 100px;
-    max-width: 700px;
+    height: 100%;
     display: flex;
-    position: absolute;
+    position: relative;
     align-items: center;
     justify-content: center;
-    margin-left: 20%;
-    margin-top: 5%;
+    vertical-align: middle;
+    margin-left: 3%;
 }
 
-.info-pessoal ul p{
-    color: #fff;
-    font-size: 1.5rem;
+.info-pessoal h4{
+    width: 100%;
+    font-size: 1.1rem;
+    color: rgb(2, 2, 12);
+}
 
+.info-pessoal ul {
+    margin-top: 1%;
+}
+
+.info-pessoal p {
+    padding: 2px;
+    font-weight: 300;
+}
+
+.button-cv {
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.button-cv button {
+    background-color: #090333;
+    width: 220px;
+    height: 40px;
+    color: white;
+    margin-right: 5px;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+.button-cv button:hover {
+    transition: background-color 0.6s;
+    background: #17106e;
+    color: rgb(161, 161, 161);
+    cursor: pointer;
 }
