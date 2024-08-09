@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+<body>
+    <h1 id="inicio"> Módulo 1 - Primeiros Passos com HTML</h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+    <ul>
+        <li><a href="#comp">História dos computadores</a></li>
+        <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+        <li><a href="#server">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estruct">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#lists">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencies">Links de referências</a></li>
+    </ul>
+
+    <h2 id="comp">História dos computadores</h2>
+    <p>Os primeiros computadores surgiram em meados da segunda guerra mundial, funcionavam a partir de válvulas eltro-mecânicas
+      e eram utilizados para auxilio na identificação de possiveis ataque. Após alguns anos as válvulas foram substituidas por transistores
+      que eram bem menores e reduziram consideravelmente o tamanho dos coputadores, após esse periodo surgiui os circuitos integrados e após alguns anos
+      os computadores pessoais e por fim chegamos onde estamos hoje.
+    </p>
+    <p>Após alguns anos as válvulas foram substituidas por transistores
+      que eram bem menores e reduziram consideravelmente o tamanho dos coputadores, após esse periodo surgiui os circuitos integrados e após alguns anos
+      os computadores pessoais e por fim chegamos onde estamos hoje.</p>
+      <small><a href="#inicio">(Voltar)</a> </small>
+
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <p>Clientes são os usuários finais que vão acessar o site em seus dispositivos pessoais, 
+      são os consumidores finais do conteúdo do site.
+    </p>
+    <small><a href="#inicio">(Voltar)</a> </small>
+
+    <h2 id="server">O que são <i>Servers</i>?</h2>
+    <p>São os equipamentos responsáveis por armazenar e gerenciar os arquivos e informações do site,
+      é responsável por toda a parte de backend e utiliza de várias linguagens para processamento, 
+      como PHP, JavaScript, Java, C#, entre outros.
+    </p>
+    <small><a href="#inicio">(Voltar)</a> </small>
+
+    <h2 id="estruct">Como é uma estrutura básica de um HTML?</h2>
+    <p>A estrutrua básica do html começa com a tag, onde toda a parte escrita em html vai ficar;
+      tem a tag head que é o cabeçalho do site, nele fica o titulo da aba, configurações dá página e links para o CSS;
+      e por último, temos a tag body que define o corpo do site, onde será realizada toda a montagem do site e onde entram as demais tas.
+    </p>
+    <small><a href="#inicio">(Voltar)</a> </small>
+
+    <h2 id="lists">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p>
+      As listas ordenadassão definidas pela tag ol e precisa da adição da tag filha li, nessa lista os itens são mostrados de forma ordenada, com os itens númerados.
+    </p>
+    <p>
+      Já as listas não ordenadas utilizam a tag ul e também tem a tag li como filha, mas mostra os itens da lista apenas com um marcador na lateral.
+    </p>
+    <small><a href="#inicio">(Voltar)</a> </small>
+
+    <h2 id="referencies">Links de referências</h2>
+    <p>
+    <ul>
+        <li><a href="http://dio.me">dio.me</a></li>
+        <li><a href="#http://w3c.org">w3c</a></li>
+    </ul>
+
+</body>
+</html>
